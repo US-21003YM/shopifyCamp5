@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "all-commodity-discount-app"
+client_id = "e3fc2a39470594cd51b70de1c6113c54"
+application_url = "https://injection-traveller-devoted-sa.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products,write_discounts"
+
+[auth]
+redirect_urls = [
+  "https://injection-traveller-devoted-sa.trycloudflare.com/auth/callback",
+  "https://injection-traveller-devoted-sa.trycloudflare.com/auth/shopify/callback",
+  "https://injection-traveller-devoted-sa.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-07"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "xn-cck2b3b0078b97jso5a.myshopify.com"
